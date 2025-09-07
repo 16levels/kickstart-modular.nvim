@@ -21,3 +21,6 @@ require 'lazy-plugins'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- Add $h/.l/b to vim path
+vim.env.PATH = vim.env.PATH .. ':' .. vim.env.HOME .. '/.local/bin'
