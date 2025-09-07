@@ -209,9 +209,7 @@ return {
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         ansiblels = {},
-        awk_ls = {},
         clangd = {},
-        cobol_ls = {},
         dockerls = {},
         gopls = {},
         ocamllsp = {},
