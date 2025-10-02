@@ -23,4 +23,4 @@ require 'lazy-plugins'
 -- vim: ts=2 sts=2 sw=2 et
 
 -- Add $h/.l/b to vim path
-vim.env.PATH = vim.env.PATH .. ':' .. vim.env.HOME .. '/.local/bin'
+-- vim.env.PATH = vim.env.PATH .. ':' .. vim.env.HOME .. '/.local/bin'
