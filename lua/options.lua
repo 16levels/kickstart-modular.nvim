@@ -4,9 +4,19 @@
 --  For more options, you can see `:help option-list`
 
 -- Make line numbers default
-vim.o.number = true
--- You can also add relative line numbers, to help with jumping.
-vim.o.relativenumber = true
+vim.api.nvim_create_autocmd({ 'InsertEnter' }, {
+  callback = function()
+    vim.opt.relativenumber = false
+    vim.opt.number = true
+  end,
+})
+
+vim.api.nvim_create_autocmd({ 'InsertLeave', 'BufEnter' }, {
+  callback = function()
+    vim.opt.relativenumber = true
+    vim.opt.number = false
+  end,
+})
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
